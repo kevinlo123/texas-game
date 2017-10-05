@@ -23,7 +23,7 @@ anchor.onclick = cowboyYell;     /*<--EVENT LISTENER****************************
 
 function move(){
   div.style.marginTop = Math.floor(Math.random()* 620)+ "px";
-  div.style.marginLeft = Math.floor(Math.random()* 8300)+ "px";
+  div.style.marginLeft = Math.floor(Math.random()* 830)+ "px";
   points += 1;
   span.innerHTML = points;
   gunShot();
