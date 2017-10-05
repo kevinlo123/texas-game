@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Rye');
+
+*{
+    font-family: 'Rye', cursive;
+    box-sizing: border-box;
+    
+}
+
+/***********************************************
+*************** Main body style ****************/
+body {
+    transition: 1s all;
+    margin-left: 0%;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: -70px;
+  }
+
+/**************************************************************
+**** both pages that are transition when links are clicked ****/
+ 
+.page {
+      display:none;
+      opacity:0;
+}
+  
+.page.current {
+      display: block;
+      opacity: 1;
+}
+  
+/********************************************
+**** links that change the pages clicked ****/
+  
+.soundText{
+    position: absolute;
+    bottom: 520px;
+    left: 30%;
+    color: white;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-size: 30px
+}
+
+  .anchors , #anchors{
+    text-decoration: none;
+    position: relative;
+    top: 149px;
+    font-size: 32px;
+    margin-right: 62px;
+    left: 32%;
+    color: red;
+    -webkit-text-stroke-width: .8px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  .anchors:hover , #anchors:hover{
+      color: black;
+  }
+
+  .start-img , .page2Pic{
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: 870px;
+      z-index: -1;
+  }
+
+  .title{
+    position: absolute;
+    bottom: 85%;
+    left: 31%;
+    font-size: 41px;
+    color: white;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+/**********************************************
+*** The styles for the actual game page ******/
+  
+  #shootTheEnemy{
+    position: relative;
+    left: 21%;
+    bottom: 7px;
+    color: red;
+  }
+  
+#box , .cowboy {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s all;
+    z-index: 2;
+  }
+
+  #box:hover{
+    border-radius: 50%;
+  }
+/**************************************************************
+***********styles for the score and time container************/
+
+  .container_Score_Time{
+    border-radius: 3px;
+    height: 170px;
+    width: 416px;
+    padding: 53px 19px;
+    position: absolute;
+    left: 67%;
+    bottom: 72%;
+    background: #A05242;
+    border: 1px solid black;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .container_Score{
+      float: left;
+      width: 140px;
+      height: 73px;
+      display: block;
+      margin-right: 27px;
+      border:1px solid black;      
+      border-radius: 3px; 
+      background: #ffcd94; 
+  }
+
+  #score{
+    font-size: 48px;
+    font-family: arial;
+    margin-left: 53px;
+    position: relative;
+    top: 4px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; 
+  }
+
+  .container_Countdown{
+    width: 208px;
+    float: left;
+    height: 72px;
+    display: block;
+    padding-top: 0px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: #ffcd94;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;     
+  }
+
+  .text-Top{
+    position: absolute;
+    top: 5px;
+    padding-top: 23px;
+    font-family: arial;
+    font-size: 28px;
+    padding-bottom: -2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+  #countdown{
+    font-size: 41px;
+    text-align: center;
+    padding-top: 11px;
+    font-family: arial;
+  }
+
+

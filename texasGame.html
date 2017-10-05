@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wild Wild SHOOTER</title>
+        <link href="texasGame.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav><!-- the pages nav(switches the homepage to game page)-->
+            <a class="anchors" href="#page-1">Home Page</a>
+            <a id="anchors" href="#page-2">Play Now!</a>
+        </nav>
+        <!-- the starting page for the game -->
+        <div class="page current">
+            <img class="start-img" src="./images/wildWest.jpg">
+            <h1 class="title">Wild Wild SHOOTER!</h1>
+            <h2 class="soundText">MAKE SURE YOUR SOUND IS ON!</h2>
+        </div>
+        <!-- the actual game stuff is located below -->
+        <div class="page">
+            <img class="page2Pic" src="./images/wildWestBackground.jpeg">
+            <h1 class="title">Wild Wild SHOOTER!</h1>            
+            <div id="box"><img class="cowboy" src="./images/cowboy.png"></div>
+            <div class="container_Score_Time">
+                <span class="text-Top">Score!</span>
+                <div class="container_Score">
+                    <span id="score">0</span>              
+                </div>
+                <span class="text-Top">Time!</span>                
+                <div class="container_Countdown">
+                    <div id="countdown">37</div>    
+                </div>
+            </div>
+            <!-- audio files from soundbible for the game -->
+            <audio id="m4" src="http://soundbible.com/mp3/Skorpion-Kibblesbob-1109158827.mp3"></audio>
+            <audio id="cowboy" src="http://soundbible.com/mp3/Cowboy_Theme-Pavak-1711860633.mp3"></audio> 
+            <!--******************************************-->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="texasGame.js"></script>
+    </body>
+</html>
