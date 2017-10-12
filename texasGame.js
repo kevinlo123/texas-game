@@ -1,14 +1,14 @@
 /*************************************************/
 /*********DECLARING ALL GLOBAL VARIABLES**********/
 
-var seconds;
-var temp;
-var div = document.getElementById("box");
-var points = 0;
-var span = document.getElementById("score");
-var trans = "rotate(360deg)";
-//var colors = ["red","blue","yellow","purple","limegreen"]
-var anchor = document.getElementById("anchors");
+let seconds;
+let temp;
+const div = document.getElementById("box");
+let points = 0;
+const span = document.getElementById("score");
+const trans = "rotate(360deg)";
+const colors = ["red","blue","yellow","purple","limegreen"]
+const anchor = document.getElementById("anchors");
 
 /*************************************************/
 /*************************************************/
@@ -32,7 +32,10 @@ function move(){
   }else{
     div.style.transform = null;
   }
-  /*var randomColor = colors[Math.floor(colors.length * Math.random())];
+      /*This is a color changing array commented out because it was early in 
+    my development and may be used later*/
+
+  var randomColor = colors[Math.floor(colors.length * Math.random())];
   if(points == true){
   }else if(randomColor === "red"){
     div.style.backgroundColor = "red";
@@ -47,7 +50,7 @@ function move(){
   }
   else{
     console.log("its going to work");
-  }*/
+  }
   gameFinished();
 }
 /**********************************************************************************/
@@ -74,6 +77,7 @@ function gunShot(){
 /**FUNCTION MAKING COWBOY AUDIO BE PLAYED***/
 
 function cowboyYell(){
+    alert("you have been challenged to  draw");
     var yeeHaw = document.getElementById("cowboy");
     yeeHaw.play();
   }
@@ -88,6 +92,7 @@ function cowboyYell(){
  
     if (seconds == 1) {
       temp = document.getElementById('countdown');
+      alert("game over");
       temp.innerHTML = "Game-over";
       return;
     }else{
